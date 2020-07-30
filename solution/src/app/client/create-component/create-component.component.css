@@ -1,0 +1,61 @@
+header {
+    background-color: rgb(238, 238, 238);
+    height: 30vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+header span {
+    position: absolute;
+    margin-left: 6vw;
+}
+
+header span h1 {
+    font-size: 50px
+}
+
+header button {
+    background-color: rgb(217, 83, 79);
+    right: 5vw;
+    position: absolute;
+}
+
+main {
+    position: relative;
+    height: 70vh;
+    padding-top: 6vh;
+    padding-left: 6vw;
+    padding-right: 5vw;
+}
+
+main form {
+    background-color: white;
+    padding: 1vw 1vh 1vw 1vh;
+    font-weight: 400;
+}
+
+main .title {
+    border-bottom: 1px solid rgba(1, 1, 1, 0.3);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+main form .col-form-label {
+    text-align: right;
+}
+
+main form textarea {
+    max-width: 18vw;
+}
+
+main form .col-sm-1 {
+    min-width: 12vw;
+}
+
+main form .Condition {
+    font-size: 15px;
+    padding-top: 1vh;
+    min-width: 16vw;
+}

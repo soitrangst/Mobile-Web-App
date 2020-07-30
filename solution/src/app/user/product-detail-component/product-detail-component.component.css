@@ -1,0 +1,30 @@
+header {
+    background-color: rgb(238, 238, 238);
+    height: 20vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+header span {
+    position: absolute;
+    margin-left: 6vw;
+}
+
+header span h1 {
+    font-size: 50px
+}
+
+main {
+    height: 80vh;
+}
+
+main div img {
+    width: 83%;
+}
+
+main div div p {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}

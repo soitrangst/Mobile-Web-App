@@ -1,0 +1,52 @@
+header {
+    background-color: rgb(238, 238, 238);
+    height: 30vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header span {
+    position: absolute;
+    margin-left: 6vw;
+    font-size: 55px;
+    font-weight: 400;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+main .fornLogin {
+    position: absolute;
+    margin-top: 7vh;
+    width: 30vw;
+    border: 2px solid rgb(238, 238, 238);
+}
+
+main .fornLogin form {
+    padding: 1vw 1vh 1vw 1vh
+}
+
+main .fornLogin span {
+    display: block;
+    background-color: rgb(238, 238, 238);
+    padding: 1vw 1vh 1vw 1vh
+}
+
+main .fornLogin form button {
+    display: block;
+    width: 100%;
+    background-color: rgb(92, 184, 92);
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main .fornLogin form button:focus {
+    outline: none;
+}

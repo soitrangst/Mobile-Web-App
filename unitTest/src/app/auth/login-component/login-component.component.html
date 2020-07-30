@@ -1,0 +1,21 @@
+<header>
+    <span>Mobile Store</span>
+</header>
+<main>
+    <div class="fornLogin" style="border: 1p solid;border-radius: 10px;">
+        <span>Please sign in</span>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <input type="email" class="form-control" formControlName="email" placeholder="Email" name="email">
+                <p class="text-warning" *ngIf="f.email.touched && f.email.invalid"> your email is invalid </p>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" formControlName="password" placeholder="Password" name="pswd">
+            </div>
+            <button type="submit" [disabled]="!loginForm.valid" value="submit" class="btn ">Login</button>
+            <button *ngIf="isRegister" [routerLink]="['/admin/signup']" routerLinkActive="router-link-active" class="btn bg-danger mt-3">Register</button>
+        </form>
+
+    </div>
+</main>

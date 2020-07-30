@@ -1,0 +1,22 @@
+main {
+    padding: 5vh 0 5vh 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .card {
+    padding: 2vh 1vw 2vh 1vw;
+}
+
+main .card .card-img-top {
+    width: 60%;
+}
+
+main .card .card-body p {
+    font-size: 13px;
+}
+
+main .card .card-body i {
+    transform: scaleX(-1);
+    margin-right: 0.1vw;
+}

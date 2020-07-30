@@ -1,0 +1,30 @@
+header {
+    background-color: rgb(238, 238, 238);
+    height: 30vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+header span {
+    position: absolute;
+    margin-left: 1vw;
+}
+
+header span h1 {
+    font-size: 50px
+}
+
+header button {
+    background-color: white;
+    right: 1vw;
+    position: absolute;
+    align-self: end;
+    top: 5vh;
+}
+
+header button i {
+    transform: scaleX(-1);
+    margin-right: auto;
+}

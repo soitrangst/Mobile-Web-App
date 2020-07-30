@@ -1,0 +1,89 @@
+<header>
+    <span>
+        <h1>Products</h1>
+         <h5>Add products</h5>
+    </span>
+    <button class="btn" (click)="goBack()">logout</button>
+</header>
+<main>
+    <div class="title">Add new product</div>
+
+    <form [formGroup]="postForm" (ngSubmit)="onSubmit(postForm.value)" enctype="multipart/form-data">
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Product Name</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" formControlName="name" id="productname">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Unit Price</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" id="price" formControlName="price">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Units In Stock</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" id="stock" formControlName="stock">
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Description</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="description" formControlName="description">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Manufacturer</label>
+            <div class="col-sm-4">
+                <textarea class="form-control" rows="2" id="manufacturer" formControlName='manufacturer'></textarea>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Category</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="category" formControlName="category">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Condition</label>
+            <div class="col-sm-2 d-flex justify-content-around Condition ">
+
+                <div>
+                    <input type="radio" id="new" value="new" formControlName="condition">
+                    <label for="new" class="mb-0">New</label>
+                </div>
+                <div>
+                    <input type="radio" id="old" value="old" formControlName="condition">
+                    <label for="old" class="mb-0">Old</label>
+                </div>
+                <div>
+                    <input type="radio" id="refurbished" value="refurbished" formControlName="condition">
+                    <label for="refurbished" class="mb-0">Refurbished</label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Product Image File</label>
+            <div class="col-sm-2">
+                <input type="file" name="image" accept='image/*' formControlName="image"  #ProductImage>
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-1 "></label>
+            <div class="col-sm-2">
+                <button type="submit" [disabled]="!postForm.valid" class="btn bg-primary text-white">Add Product</button>
+            </div>
+        </div>
+    </form>
+
+</main>

@@ -1,0 +1,20 @@
+<header>
+    <span>Sign Up</span>
+</header>
+<main>
+    <div class="fornLogin" style="border: 1p solid;border-radius: 10px;">
+        <span><h4>Please register</h4></span>
+
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+            <div class="form-group">
+                <input type="email" class="form-control" formControlName="email" placeholder="Email" name="email">
+                <p class="text-warning" *ngIf="f.email.touched && f.email.invalid"> your email is invalid </p>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" formControlName="password" placeholder="Password" name="pswd">
+            </div>
+            <button type="submit" [disabled]="!registerForm.valid" value="submit" class="btn ">Register</button>
+        </form>
+
+    </div>
+</main>
