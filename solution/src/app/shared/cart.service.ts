@@ -14,7 +14,7 @@ export class CartService {
 
   readonly listPhone = this._listPhones.asObservable();
 
-  private apiProducts: string = 'http://localhost:8800/products';
+  private apiProducts: string = 'http://192.168.1.6:8800/products';
   getData() {
     this.httpClient.get<any>(this.apiProducts).subscribe(
       (res) => this._listPhones.next([...res.data]),

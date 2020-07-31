@@ -3,14 +3,14 @@
         <h1>Products</h1>
     </span>
 </header>
-<main class="d-flex" *ngIf="detail">
-    <div class="w-50 h-100 pt-3 pb-3 pr-5 pl-3 ">
+<main class="d-flex row container" *ngIf="detail">
+    <div class="col-lg-6 col-sm-12  ">
         <img src="http://localhost:8800/{{detail.image}}" alt="">
     </div>
-    <div class="w-50 h-100 pt-3 d-flex flex-column ">
+    <div class="col-lg-6 col-sm-12  d-flex flex-column ">
         <h4>{{detail.name}}</h4>
         <p> {{detail.description}} </p>
-        <div class="d-flex   ml-0  text-center">
+        <div class="d-flex text-center">
             <h5>
                 item Code:
             </h5>

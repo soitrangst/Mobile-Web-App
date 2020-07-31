@@ -32,11 +32,11 @@ export class DataService {
 
   private readonly JWT_TOKEN: string = "JWT";
 
-  private apiProducts: string = 'http://localhost:8800/products'
+  private apiProducts: string = 'http://192.168.1.6:8800/products'
 
-  private apiRegister: string = 'http://localhost:8800/admin/signup'
+  private apiRegister: string = 'http://192.168.1.6:8800/admin/signup'
 
-  private apiLogin: string = 'http://localhost:8800/admin/login'
+  private apiLogin: string = 'http://192.168.1.6:8800/admin/login'
 
 
   createProduct(product: any): Observable<any> {

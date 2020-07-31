@@ -20,3 +20,12 @@ main .card .card-body i {
     transform: scaleX(-1);
     margin-right: 0.1vw;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:active {
+    border: 0.1em solid rgb(204, 0, 0) !important;
+}
